@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="author" content="Ravi Kumar">
+    </meta>
+    <meta charset="UTF8">
+    <!-- what is it-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link to CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+   
+    <title>Ravi Kumar Atluri</title>
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                        <!--<span class="sr-only">(current)</span>-->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="distance.html">User</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <header class="container-fluid">
+        <h1>Ravi Kumar Atluri</h1>
+    </header>
+
+    
+    <div id="calc">
+      <div >
+    <strong><label >Kilometers</label> </strong>
+        <input type = "number" id="kilo_meter_id" name="kilo_meter_id" placeholder="enter number only"  class="form-control"
+        oninput="calc(this.value)" onchange="calc(this.value)">
+<p> Miles :<span id="mile_one"></span></p>
+      </div>
+      <div class=>
+     <strong>   <label >Miles</label> </strong>
+     <input type = "number" id="mile_id" name="mile_id" placeholder="enter number only"  class="form-control"
+     oninput="calcOne(this.value)" onchange="calcOne(this.value)">
+<p> Kilometers :<span id="Kilomile_one"></span></p>
+<script >
+        function calc(value) {
+            value= parseInt(value);
+        document.getElementById("mile_one").innerHTML = (value*1.6);
+      }
+    
+      function calcOne(value) {
+            value= parseInt(value);
+        document.getElementById("Kilomile_one").innerHTML = (value/1.6);
+      }
+        </script>
+      </div> 
+    </div>
+        </body>
+        
+    </html>

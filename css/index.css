@@ -1,0 +1,44 @@
+.bg{
+  background-image: url("../images/IMG_4429.JPG");
+  height: 100%;
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+section {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: lightgray;
+    border-radius: 2em;
+  }
+
+  #video{
+    margin-top: 4rem;
+  }
+
+  #image_id{
+    border-radius: 50%;
+  }
+  .img{
+    border-radius: 100%;
+   
+  }
+#formOne{
+  padding-left: 10rem;
+  padding-right: 30rem;
+  padding-top: 2rem;
+}
+
+#btn_id{
+  margin-top: 2rem
+}
+
+#calc{
+  padding-left: 10rem;
+  padding-right: 30rem;
+  padding-top: 2rem;
+}
